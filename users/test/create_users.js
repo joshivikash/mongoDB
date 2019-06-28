@@ -34,5 +34,5 @@ describe('Create Users', ()=>{
 				console.log('WARNING !!!', err);
 				done();
 			});
-	})
+	});
 });

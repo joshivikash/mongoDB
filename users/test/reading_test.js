@@ -17,6 +17,6 @@ describe('Reading Records', ()=>{
 			then((users)=>{
 				assert(users[0]._id.toString() === kapil._id.toString());
 				done();
-			});
+			})
 	});
 });
