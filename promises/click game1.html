@@ -1,0 +1,32 @@
+<html>
+	<body>
+		<button>Click</button>
+	</body>
+	<script>
+		var counter = 0;
+		
+		document.querySelector("button").addEventListener('click', ()=>{
+				counter++;
+			});
+		
+		function startGame(){			
+			return new Promise((resolve, reject)=>{
+				if(counter > 1){
+					resolve();
+				}else{
+					reject();
+				}
+			});
+		}
+		
+		setTimeout(()=>{
+			startGame().
+				then(()=>{
+					alert("You win");
+				}).
+				catch(()=>{
+					alert("You lost");
+				})
+			}, 5000);
+	</script>
+</html>
