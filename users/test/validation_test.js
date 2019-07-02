@@ -28,7 +28,7 @@ describe('Validating Records', ()=>{
 		});
 	});
 	
-	it('Validating custom property', (done)=>{
+	it('Custom validation', (done)=>{
 		let user = new User({ name : 'Al'});
 		let validationResult = user.validateSync();
 		let {message} = validationResult.errors.name;
